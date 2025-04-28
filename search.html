@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Search for UK Universities Offering Computer Science</title>
+  <link rel="stylesheet" href="theme.css">
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      line-height: 1.6;
+      font-size: 16px;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #2E3A59;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      animation: fadeIn 2s ease-out;
+      position: relative;
+    }
+
+    #logo {
+      height: 110px;
+      width: auto;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav {
+      background-color: #1D2532;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 40px;
+      margin: 0;
+      align-items: center;
+    }
+
+    nav ul .left-links,
+    nav ul .right-links {
+      display: flex;
+    }
+
+    nav ul li {
+      list-style-type: none;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      transition: all 0.3s ease;
+      border-radius: 30px;
+      padding: 10px 20px;
+      display: block;
+    }
+
+    nav ul li a:hover {
+      background-color: #00D1B2;
+      color: white;
+      transform: translateY(-3px);
+    }
+
+    nav ul li a:active {
+      transform: translateY(1px);
+    }
+
+    .container {
+      width: 90%;
+      margin: 40px auto;
+      max-width: 1200px;
+      padding-bottom: 100px;
+    }
+
+    h2 {
+      font-size: 30px;
+      color: #333;
+      margin-bottom: 20px;
+      text-align: center;
+      animation: fadeIn 2s ease-out;
+    }
+
+    .search-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    .search-container input {
+      width: 60%;
+      padding: 15px;
+      font-size: 16px;
+      border: 2px solid #ccc;
+      border-radius: 30px;
+      margin-right: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .search-container input:focus {
+      border-color: #00D1B2;
+      outline: none;
+      transform: scale(1.05);
+    }
+
+    .search-container button {
+      padding: 15px 30px;
+      background-color: #00D1B2;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .search-container button:hover {
+      background-color: #01b79e;
+      transform: translateY(-3px);
+    }
+
+    .results {
+      margin-top: 20px;
+    }
+
+    .results ul {
+      padding: 0;
+      margin: 0;
+    }
+
+    .results ul li {
+      list-style-type: none;
+      padding: 20px;
+      background-color: #fff;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      text-align: center;
+    }
+
+    .results ul li:hover {
+      transform: scale(1.05);
+    }
+
+    .results ul li h4 a {
+      font-size: 20px;
+      color: #2E3A59;
+      text-decoration: none;
+    }
+
+    .results ul li p {
+      margin: 10px 0;
+    }
+
+    footer {
+      background-color: #2E3A59;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 16px;
+      margin-top: auto;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo" id="logo" />
+    <h1>Search for UK Universities Offering Computer Science</h1>
+  </header>
+
+  <nav>
+    <ul id="nav-links">
+      <div class="left-links">
+        <li><a href="index.html">Home</a></li>
+		<li><a href="uni.html">University's</a></li>
+		<li><a href="ucas-guide.html">UCAS Guide</a></li>
+        <li><a href="alternatives.html">Alternatives</a></li>
+        <li><a href="form.html">Contact Us</a></li>
+        <li id="login-tab"><a href="login.html">Login</a></li>
+        <li id="register-tab"><a href="register.html">Register</a></li>
+      </div>
+      <div class="right-links">
+        <li><a href="search.html">Search</a></li>
+      </div>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2>Find Your Ideal University</h2>
+
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search for a University...">
+      <button onclick="filterSearch()">Search</button>
+    </div>
+
+    <div class="results">
+      <h3 style="text-align: center;">Results will appear here...</h3>
+      <ul id="resultsList"></ul>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 ST CHARLES Catholic Sixth Form College</p>
+  </footer>
+
+  <script>
+    const ukUniversities = [
+      { name: "University of Oxford", ucasCode: "G400", tuitionFees: "£9,250 per year (Home), £26,770 per year (International)", requiredGrades: "A*AA at A-Level", courseDescription: "A comprehensive introduction to Computer Science with a focus on algorithms, artificial intelligence, and programming.", location: "Oxford, Southeast England", link: "oxford.html" },
+      { name: "University of Cambridge", ucasCode: "G400", tuitionFees: "£9,250 per year (Home), £22,227 per year (International)", requiredGrades: "A*AA at A-Level", courseDescription: "Focus on theory, applications, and design of computer systems, including AI, programming, and more.", location: "Cambridge, East England", link: "cambridge.html" },
+      { name: "Imperial College London", ucasCode: "G400", tuitionFees: "£9,250 per year (Home), £30,250 per year (International)", requiredGrades: "A*AA at A-Level", courseDescription: "A focus on practical problem-solving, programming, and AI with emphasis on real-world applications.", location: "London, Southeast England", link: "imperial.html" },
+      { name: "University College London (UCL)", ucasCode: "G400", tuitionFees: "£9,250 per year (Home), £25,000 per year (International)", requiredGrades: "A*AA at A-Level", courseDescription: "Courses range from machine learning to software engineering and focus on a hands-on approach to technology.", location: "London, Southeast England", link: "ucl.html" },
+      { name: "University of Edinburgh", ucasCode: "G400", tuitionFees: "£9,250 per year (Home), £20,000 per year (International)", requiredGrades: "AAA at A-Level", courseDescription: "A balance of theory and practice in computer science with opportunities for research-based projects.", location: "Edinburgh, Scotland", link: "edinburgh.html" }
+    ];
+
+    function filterSearch() {
+      const input = document.getElementById("searchInput").value.toLowerCase();
+      const resultsList = document.getElementById("resultsList");
+      const filteredResults = ukUniversities.filter(u => u.name.toLowerCase().includes(input));
+
+      resultsList.innerHTML = "";
+
+      if (filteredResults.length > 0) {
+        filteredResults.forEach(u => {
+          const li = document.createElement("li");
+          li.innerHTML = `
+            <h4><a href="${u.link}">${u.name}</a></h4>
+            <p><strong>UCAS Code:</strong> ${u.ucasCode}</p>
+            <p><strong>Tuition Fees:</strong> ${u.tuitionFees}</p>
+            <p><strong>Required Grades:</strong> ${u.requiredGrades}</p>
+            <p><strong>Course Description:</strong> ${u.courseDescription}</p>
+            <p><strong>Location:</strong> ${u.location}</p>
+          `;
+          resultsList.appendChild(li);
+        });
+      } else {
+        const li = document.createElement("li");
+        li.textContent = "No results found.";
+        resultsList.appendChild(li);
+      }
+    }
+
+    function updateNav() {
+      const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
+      const username = localStorage.getItem("username");
+      const loginTab = document.getElementById("login-tab");
+      const registerTab = document.getElementById("register-tab");
+
+      if (isLoggedIn && username) {
+        loginTab.innerHTML = `<a href="login.html">${username}</a>`;
+        if (registerTab) registerTab.style.display = "none";
+      } else {
+        loginTab.innerHTML = `<a href="login.html">Login</a>`;
+        if (registerTab) registerTab.style.display = "inline";
+      }
+    }
+
+    window.onload = updateNav;
+  </script>
+</body>
+</html>

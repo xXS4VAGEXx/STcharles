@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>University College London (UCL) - Computer Science</title>
+  <link rel="stylesheet" href="theme.css">
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      line-height: 1.6;
+      font-size: 16px;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #004c97;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      animation: fadeIn 2s ease-out;
+      position: relative;
+    }
+
+    #logo {
+      height: 110px;
+      width: auto;
+      position: absolute;
+      left: 20px;
+      top: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav {
+      background-color: #003366;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 40px;
+      margin: 0;
+      align-items: center;
+    }
+
+    nav ul .left-links,
+    nav ul .right-links {
+      display: flex;
+    }
+
+    nav ul li {
+      list-style-type: none;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      transition: all 0.3s ease;
+      border-radius: 30px;
+      padding: 10px 20px;
+      display: block;
+    }
+
+    nav ul li a:hover {
+      background-color: #00D1B2;
+      color: white;
+      transform: translateY(-3px);
+    }
+
+    nav ul li a:active {
+      transform: translateY(1px);
+    }
+
+    .container {
+      width: 90%;
+      margin: 40px auto;
+      max-width: 1200px;
+      padding-bottom: 100px;
+    }
+
+    h2 {
+      font-size: 30px;
+      color: #003366;
+      margin-bottom: 20px;
+      text-align: center;
+      animation: fadeIn 2s ease-out;
+    }
+
+    h3 {
+      font-size: 24px;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      color: #004c97;
+      text-align: center;
+    }
+
+    .course-info {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      flex: 1;
+      min-width: 250px;
+      text-align: center;
+      transition: transform 0.3s ease;
+      margin-bottom: 20px;
+    }
+
+    .course-info:hover {
+      transform: scale(1.05);
+    }
+
+    .course-info h4 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 40px;
+    }
+
+    footer {
+      background-color: #004c97;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 16px;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="UCL Logo" id="logo" />
+    <h1>University College London (UCL) - Computer Science</h1>
+  </header>
+
+  <nav>
+    <ul id="nav-links">
+      <div class="left-links">
+        <li><a href="index.html">Home</a></li>
+		<li><a href="uni.html">University's</a></li>
+		<li><a href="ucas-guide.html">UCAS Guide</a></li>
+        <li><a href="alternatives.html">Alternatives</a></li>
+        <li><a href="form.html">Contact Us</a></li>
+        <li id="login-tab"><a href="login.html">Login</a></li>
+        <li id="register-tab"><a href="register.html">Register</a></li>
+      </div>
+      <div class="right-links">
+        <li><a href="search.html">Search</a></li>
+      </div>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2>Course Overview</h2>
+    <p>University College London (UCL) offers a top-ranked Computer Science program that combines a solid foundation in theory with practical experience in cutting-edge technologies.</p>
+
+    <div class="course-info">
+      <h4>UCAS Code</h4>
+      <p><strong>G400</strong></p>
+    </div>
+
+    <div class="course-info">
+      <h4>Tuition Fees</h4>
+      <p>£9,250 per year (Home), £25,000 per year (International)</p>
+    </div>
+
+    <div class="course-info">
+      <h4>Required Grades</h4>
+      <p>A*AA at A-Level</p>
+    </div>
+
+    <div class="course-info">
+      <h4>Location</h4>
+      <p>UCL is situated in the heart of London, offering a vibrant and dynamic academic environment.</p>
+    </div>
+
+    <h3>Core Computer Science Courses</h3>
+    <div class="course-info">
+      <h4>Introduction to Programming</h4>
+      <p>An introductory course focusing on software development, algorithms, and computational thinking.</p>
+    </div>
+
+    <div class="course-info">
+      <h4>Data Structures and Algorithms</h4>
+      <p>This course covers essential topics like algorithms, data structures, and problem-solving techniques.</p>
+    </div>
+
+    <div class="course-info">
+      <h4>Machine Learning</h4>
+      <p>A detailed study of machine learning techniques, including supervised and unsupervised learning, and their real-world applications.</p>
+    </div>
+
+    <h3>Facilities</h3>
+    <ul>
+      <li>State-of-the-art computer labs and facilities</li>
+      <li>Access to high-performance computing resources for research and development</li>
+      <li>Advanced AI and machine learning labs</li>
+      <li>Dedicated spaces for collaboration and innovation</li>
+    </ul>
+
+    <h3>Application Process</h3>
+    <p>To apply to UCL's Computer Science program, visit the UCAS website. A strong personal statement, academic references, and specific qualifications are required.</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 ST CHARLES Catholic Sixth Form College</p>
+  </footer>
+
+  <script>
+    // Function to update the navigation links based on login status
+    function updateNav() {
+      const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
+      const username = localStorage.getItem("username");
+      const loginTab = document.getElementById("login-tab");
+      const registerTab = document.getElementById("register-tab");
+
+      if (isLoggedIn && username) {
+        loginTab.innerHTML = `<a href="login.html">${username}</a>`; // Update Login to username
+        if (registerTab) registerTab.style.display = "none"; // Hide Register tab
+      } else {
+        loginTab.innerHTML = `<a href="login.html">Login</a>`; // Keep Login link if not logged in
+        if (registerTab) registerTab.style.display = "inline"; // Show Register tab if not logged in
+      }
+    }
+
+    // Call updateNav function when the page loads
+    window.onload = updateNav;
+  </script>
+</body>
+</html>

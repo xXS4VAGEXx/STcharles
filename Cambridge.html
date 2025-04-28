@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>University of Cambridge - Computer Science</title>
+  <link rel="stylesheet" href="theme.css">
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #004c97;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 20px;
+      font-weight: 700;
+      animation: fadeIn 1.5s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    header h1 {
+      margin: 0;
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    #logo {
+      height: 110px; /* Increased size of the logo */
+      width: auto;
+      position: absolute;
+      left: 20px;
+      top: 20px;
+    }
+
+    nav {
+      background-color: #003366;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 40px;
+      margin: 0;
+      align-items: center;
+    }
+
+    nav ul .left-links,
+    nav ul .right-links {
+      display: flex;
+    }
+
+    nav ul li {
+      list-style: none;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      transition: all 0.3s ease;
+      border-radius: 30px;
+      padding: 10px 20px;
+      display: block;
+    }
+
+    nav ul li a:hover {
+      background-color: #00D1B2;
+      color: white;
+      transform: translateY(-3px);
+    }
+
+    nav ul li a:active {
+      transform: translateY(1px);
+    }
+
+    .container {
+      width: 85%;
+      max-width: 1200px;
+      margin: 40px auto;
+      flex-grow: 1;
+    }
+
+    h2 {
+      font-size: 32px;
+      color: #003366;
+      text-align: center;
+      margin-bottom: 30px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .intro-section {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .intro-section p {
+      font-size: 18px;
+      line-height: 1.8;
+      max-width: 900px;
+      margin: 0 auto 30px;
+    }
+
+    .course-info {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      padding: 20px;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .course-info:hover {
+      transform: scale(1.03);
+    }
+
+    .course-info h4 {
+      font-size: 20px;
+      color: #003366;
+      margin-bottom: 10px;
+    }
+
+    .course-info p,
+    .course-info ul {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    .course-info ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    footer {
+      background-color: #004c97;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 16px;
+      margin-top: auto;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="University Logo" id="logo" />
+    <h1>University of Cambridge - Computer Science</h1>
+  </header>
+
+  <nav>
+    <ul id="nav-links">
+      <div class="left-links">
+        <li><a href="index.html">Home</a></li>
+		<li><a href="uni.html">University's</a></li>
+		<li><a href="ucas-guide.html">UCAS Guide</a></li>
+        <li><a href="alternatives.html">Alternatives</a></li>
+        <li><a href="form.html">Contact Us</a></li>
+        <li id="login-tab"><a href="login.html">Login</a></li>
+        <li id="register-tab"><a href="register.html">Register</a></li>
+      </div>
+      <div class="right-links">
+        <li><a href="search.html">Search</a></li>
+      </div>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2>Course Overview</h2>
+    <p>The University of Cambridge offers a world-renowned Computer Science program that emphasizes both theoretical and practical skills in computing.</p>
+
+    <div class="course-info">
+      <h4>UCAS Code</h4>
+      <p><strong>G400</strong></p>
+    </div>
+
+    <div class="course-info">
+      <h4>Tuition Fees</h4>
+      <p>£9,250 per year (Home), £22,227 per year (International)</p>
+    </div>
+
+    <div class="course-info">
+      <h4>Required Grades</h4>
+      <p>A*AA at A-Level</p>
+    </div>
+
+    <div class="course-info">
+      <h4>Location</h4>
+      <p>Cambridge is located in the East of England, a vibrant academic city known for its university and intellectual culture.</p>
+    </div>
+
+    <h3>Computer Science Courses</h3>
+    <div class="course-info">
+      <h4>Fundamentals of Computer Science</h4>
+      <p>A broad introduction to the discipline, focusing on programming, algorithm design, and computational theory.</p>
+    </div>
+
+    <div class="course-info">
+      <h4>Data Science & Big Data Analytics</h4>
+      <p>Explore large-scale data analysis, statistical methods, and the techniques used to extract valuable insights from big data.</p>
+    </div>
+
+    <div class="course-info">
+      <h4>Systems and Network Security</h4>
+      <p>Learn about network architectures, security protocols, encryption, and the techniques for protecting systems from cyber threats.</p>
+    </div>
+
+    <h3>Facilities</h3>
+    <ul>
+      <li>Cutting-edge computer labs with industry-standard software</li>
+      <li>Access to high-performance computing for research purposes</li>
+      <li>Modern lecture theatres and seminar rooms</li>
+      <li>Specialized AI research centers and data science labs</li>
+    </ul>
+
+    <h3>Application Process</h3>
+    <p>Apply through UCAS. A personal statement, references, and academic qualifications are required. An interview may be part of the selection process.</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 ST CHARLES Catholic Sixth Form College</p>
+  </footer>
+
+  <script>
+    // Function to update the navigation links based on login status
+    function updateNav() {
+      const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
+      const username = localStorage.getItem("username");
+      const loginTab = document.getElementById("login-tab");
+      const registerTab = document.getElementById("register-tab");
+
+      if (isLoggedIn && username) {
+        loginTab.innerHTML = `<a href="login.html">${username}</a>`; // Update Login to username
+        if (registerTab) registerTab.style.display = "none"; // Hide Register tab
+      } else {
+        loginTab.innerHTML = `<a href="login.html">Login</a>`; // Keep Login link if not logged in
+        if (registerTab) registerTab.style.display = "inline"; // Show Register tab if not logged in
+      }
+    }
+
+    // Call updateNav function when the page loads
+    window.onload = updateNav;
+  </script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+HTML Cheat Sheet
+Basic Structure
+html
+Copy
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Title</title>
+</head>
+<body>
+    <!-- Content goes here -->
+</body>
+</html>
+Text Elements
+Headings:
+html
+Copy
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+Paragraph:
+html
+Copy
+<p>This is a paragraph.</p>
+Bold & Italics:
+html
+Copy
+<strong>This is bold text.</strong>
+<em>This is italic text.</em>
+Line Break:
+html
+Copy
+<p>This is a line break.<br>Next line.</p>
+Horizontal Rule:
+html
+Copy
+<hr>
+Links and Images
+Anchor (Link):
+html
+Copy
+<a href="https://www.example.com" target="_blank">Click here</a>
+Image:
+html
+Copy
+<img src="image.jpg" alt="Description" width="500" height="300">
+Lists
+Unordered List:
+html
+Copy
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ul>
+Ordered List:
+html
+Copy
+<ol>
+    <li>First item</li>
+    <li>Second item</li>
+    <li>Third item</li>
+</ol>
+Tables
+Basic Table:
+html
+Copy
+<table>
+    <thead>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+        </tr>
+        <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+        </tr>
+    </tbody>
+</table>
+Forms
+Form:
+html
+Copy
+<form action="/submit_form" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+    
+    <input type="submit" value="Submit">
+</form>
+Input Types:
+html
+Copy
+<input type="text" placeholder="Text">
+<input type="email" placeholder="Email">
+<input type="password" placeholder="Password">
+<input type="number" placeholder="Number">
+<input type="checkbox" id="agree"> <label for="agree">I Agree</label>
+<input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female
+Semantic HTML
+Article:
+html
+Copy
+<article>
+    <h2>Article Title</h2>
+    <p>Article content...</p>
+</article>
+Section:
+html
+Copy
+<section>
+    <h2>Section Heading</h2>
+    <p>Section content...</p>
+</section>
+Nav (Navigation):
+html
+Copy
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+Footer:
+html
+Copy
+<footer>
+    <p>&copy; 2025 My Website</p>
+</footer>
+Multimedia
+Audio:
+html
+Copy
+<audio controls>
+    <source src="audio.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
+Video:
+html
+Copy
+<video width="320" height="240" controls>
+    <source src="video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+Comments
+html
+Copy
+<!-- This is a comment -->
+Meta Tags for SEO
+html
+Copy
+<meta name="description" content="This is a description of the webpage">
+<meta name="keywords" content="HTML, web development, tutorial">
+<meta name="author" content="Your Name">
+CSS in HTML
+Inline CSS:
+html
+Copy
+<p style="color: blue; font-size: 16px;">This is a blue paragraph.</p>
+Internal CSS (in <head> section):
+html
+Copy
+<style>
+    body {
+        background-color: #f0f0f0;
+    }
+    h1 {
+        color: #333;
+    }
+</style>
+HTML Entities
+html
+Copy
+&copy; &lt; &gt; &amp; &quot; &apos;

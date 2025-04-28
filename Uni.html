@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Universities | Computer Science Programs</title>
+  <link rel="stylesheet" href="theme.css">
+  <style>
+    /* Keep the style consistent, based on your examples */
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      line-height: 1.6;
+      font-size: 16px;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background-color: #2E3A59;
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+      position: relative;
+      font-weight: 700;
+      font-size: 18px;
+      animation: fadeIn 2s ease-out;
+    }
+    #logo {
+      height: 110px;
+      width: auto;
+      position: absolute;
+      left: 20px;
+      top: 20px;
+    }
+    nav {
+      background-color: #1D2532;
+      padding: 10px 0;
+    }
+    nav ul {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 40px;
+      margin: 0;
+      align-items: center;
+    }
+    nav ul .left-links, nav ul .right-links {
+      display: flex;
+    }
+    nav ul li {
+      list-style-type: none;
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      transition: all 0.3s ease;
+      border-radius: 30px;
+      padding: 10px 20px;
+      display: block;
+    }
+    nav ul li a:hover {
+      background-color: #00D1B2;
+      transform: translateY(-3px);
+    }
+    .container {
+      width: 90%;
+      margin: 40px auto;
+      max-width: 1200px;
+      padding-bottom: 100px;
+    }
+    h2, h3, h4 {
+      text-align: center;
+      color: #2E3A59;
+      margin-top: 20px;
+    }
+    .university-info {
+      background: white;
+      padding: 30px;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .university-info ul {
+      padding-left: 20px;
+    }
+    .visit-button {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+    }
+    .visit-button button {
+      background-color: #00D1B2;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .visit-button button:hover {
+      background-color: #01b79e;
+      transform: translateY(-3px);
+    }
+    footer {
+      background-color: #2E3A59;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <img src="logo.png" alt="Logo" id="logo">
+  <h1>Explore Our Partner Universities</h1>
+</header>
+
+<nav>
+  <ul id="nav-links">
+    <div class="left-links">
+      <li><a href="index.html">Home</a></li>
+	  <li><a href="uni.html">University's</a></li>
+      <li><a href="ucas-guide.html">UCAS Guide</a></li>
+      <li><a href="alternatives.html">Alternatives</a></li>
+      <li><a href="form.html">Contact Us</a></li>
+      <li id="login-tab"><a href="login.html">Login</a></li>
+      <li id="register-tab"><a href="register.html">Register</a></li>
+    </div>
+    <div class="right-links">
+      <li><a href="search.html">Search</a></li>
+    </div>
+  </ul>
+</nav>
+
+<div class="container">
+
+  <section class="university-info">
+    <h2>University of Oxford</h2>
+    <h3>Rank: #1 in the UK for Computer Science</h3>
+    <h4>Courses:</h4>
+    <ul>
+      <li><strong>BSc Computer Science:</strong> Algorithms, Machine Learning, Artificial Intelligence, Software Verification, Computer Security.</li>
+      <li><strong>BSc Computer Science and Philosophy:</strong> Logic, Machine Learning, Philosophy of Mind, Computation Theory.</li>
+    </ul>
+    <div class="visit-button">
+      <button onclick="window.location.href='oxford.html'">Visit Oxford</button>
+    </div>
+    <h4>Student Life:</h4>
+    <ul>
+      <li><strong>Transportation:</strong> Extensive cycling routes, bus services, and proximity to London by train.</li>
+      <li><strong>Accommodation:</strong> College accommodation guaranteed for most undergraduates.</li>
+      <li><strong>Finances:</strong> Oxford bursaries and scholarships available for eligible students.</li>
+    </ul>
+    <div class="visit-button">
+      <button onclick="window.location.href='https://www.ox.ac.uk/students'">More About Student Life at Oxford</button>
+    </div>
+  </section>
+
+  <section class="university-info">
+    <h2>Imperial College London</h2>
+    <h3>Rank: #2 in the UK for Computer Science</h3>
+    <h4>Courses:</h4>
+    <ul>
+      <li><strong>BEng Computing:</strong> Software Engineering, Databases, Computer Architecture, AI, Robotics.</li>
+      <li><strong>MEng Computing (Artificial Intelligence and Machine Learning):</strong> Deep Learning, Computer Vision, Natural Language Processing.</li>
+      <li><strong>MEng Computing (Software Engineering):</strong> Project Management, Software Development Practices, Advanced Programming Techniques.</li>
+    </ul>
+    <div class="visit-button">
+      <button onclick="window.location.href='imperial.html'">Visit Imperial</button>
+    </div>
+    <h4>Student Life:</h4>
+    <ul>
+      <li><strong>Transportation:</strong> Located in Central London with excellent underground and bus networks.</li>
+      <li><strong>Accommodation:</strong> Halls of residence available for first-year students; private housing options nearby.</li>
+      <li><strong>Finances:</strong> Imperial College hardship funds and bursaries available.</li>
+    </ul>
+    <div class="visit-button">
+      <button onclick="window.location.href='https://www.imperial.ac.uk/study/campus-life/'">More About Student Life at Imperial</button>
+    </div>
+  </section>
+
+  <section class="university-info">
+    <h2>University of Cambridge</h2>
+    <h3>Rank: #3 in the UK for Computer Science</h3>
+    <h4>Courses:</h4>
+    <ul>
+      <li><strong>BA Computer Science:</strong> Machine Learning, Cybersecurity, Human-Computer Interaction, Computer Graphics.</li>
+      <li><strong>Computer Science with Mathematics:</strong> Algorithms and Data Structures, Mathematical Methods, AI and Complexity Theory.</li>
+    </ul>
+    <div class="visit-button">
+      <button onclick="window.location.href='cambridge.html'">Visit Cambridge</button>
+    </div>
+    <h4>Student Life:</h4>
+    <ul>
+      <li><strong>Transportation:</strong> Great cycling infrastructure, buses, and train access to London.</li>
+      <li><strong>Accommodation:</strong> College-based accommodation usually guaranteed for the entire undergraduate course.</li>
+      <li><strong>Finances:</strong> Cambridge bursary scheme supports eligible students with grants and scholarships.</li>
+    </ul>
+    <div class="visit-button">
+      <button onclick="window.location.href='https://www.cam.ac.uk/student-life'">More About Student Life at Cambridge</button>
+    </div>
+  </section>
+
+  <section class="university-info">
+    <h2>University College London (UCL)</h2>
+    <h3>Rank: #5 in the UK for Computer Science</h3>
+    <h4>Courses:</h4>
+    <ul>
+      <li><strong>BSc Computer Science:</strong> Machine Learning, Web Development, Networks and Security, Interaction Design.</li>
+      <li><strong>MEng Computer Science:</strong> Research Project, Advanced AI, Distributed Systems, Entrepreneurship in Technology.</li>
+    </ul>
+    <div class="visit-button">
+      <button onclick="window.location.href='ucl.html'">Visit UCL</button>
+    </div>
+    <h4>Student Life:</h4>
+    <ul>
+      <li><strong>Transportation:</strong> Central London location; excellent underground, bus, and cycling facilities.</li>
+      <li><strong>Accommodation:</strong> Guaranteed halls for first-year undergraduates; wide choice of private rentals.</li>
+      <li><strong>Finances:</strong> UCL offers scholarships, bursaries, and hardship funds.</li>
+    </ul>
+    <div class="visit-button">
+      <button onclick="window.location.href='https://www.ucl.ac.uk/prospective-students/campus-life'">More About Student Life at UCL</button>
+    </div>
+  </section>
+
+  <section class="university-info">
+    <h2>University of Edinburgh</h2>
+    <h3>Rank: #6 in the UK for Computer Science</h3>
+    <h4>Courses:</h4>
+    <ul>
+      <li><strong>BSc Artificial Intelligence and Computer Science:</strong> Machine Learning, Computer Vision, Intelligent Robotics, Cognitive Science.</li>
+      <li><strong>BSc Computer Science:</strong> Algorithms, Data Science, Programming Languages, Systems and Software Engineering.</li>
+    </ul>
+    <div class="visit-button">
+      <button onclick="window.location.href='edinburgh.html'">Visit Edinburgh</button>
+    </div>
+    <h4>Student Life:</h4>
+    <ul>
+      <li><strong>Transportation:</strong> Excellent bus services across the city; student travel discounts available.</li>
+      <li><strong>Accommodation:</strong> University accommodation for first-years; private rentals are common later on.</li>
+      <li><strong>Finances:</strong> Scholarships and bursary options for domestic and international students.</li>
+    </ul>
+    <div class="visit-button">
+      <button onclick="window.location.href='https://www.ed.ac.uk/studying/student-life'">More About Student Life at Edinburgh</button>
+    </div>
+  </section>
+
+</div>
+
+
+
+<footer>
+  <p>&copy; 2025 ST CHARLES Catholic Sixth Form College</p>
+</footer>
+
+<script>
+  function updateNav() {
+    const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
+    const username = localStorage.getItem("username");
+    const loginTab = document.getElementById("login-tab");
+    const registerTab = document.getElementById("register-tab");
+
+    if (isLoggedIn && username) {
+      loginTab.innerHTML = `<a href="login.html">${username}</a>`;
+      if (registerTab) registerTab.style.display = "none";
+    } else {
+      loginTab.innerHTML = `<a href="login.html">Login</a>`;
+      if (registerTab) registerTab.style.display = "inline";
+    }
+  }
+
+  window.onload = updateNav;
+</script>
+
+</body>
+</html>
